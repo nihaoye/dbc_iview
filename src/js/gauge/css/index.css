@@ -1,0 +1,62 @@
+.gauge{
+	display:inline-block;
+	min-width:100px;
+	min-height:100px;
+	width:200px;
+	height:200px;
+	position:relative;
+	vertical-align: middle;
+}
+.gauge-center{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform-origin: center;
+	transform: translate(-50%,-50%);
+}
+.gauge-kdp{
+	position:absolute;
+	width:90%;
+	height:90%;
+	background:url("../image/kdp.png") no-repeat;
+	background-size:100%;
+}
+.gauge-zz{
+	background-size:100%;
+	height:30%;
+	width:auto;
+	transform-origin:50% 0;
+	transform: translate(-50%,0) rotate(45deg);
+	display:block;
+	transition: transform 20ms;
+}
+.gauge-title{
+	position:absolute;
+	left:50%;
+	transform: translateX(-50%);
+	bottom:5%;
+	font-size:16px;
+	color:#696969;
+}
+.gauge-number{
+	font-size:16px;
+	color:#5D87FF;
+}
+.gauge-number .lg{
+	font-size:26px;
+	vertical-align: middle;
+	line-height:100%;
+}
+.gauge-number .d{
+	font-size:16px;
+	display:inline-block;
+	vertical-align: bottom;
+	line-height:100%;
+}
+.gauge svg{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform-origin: center;
+	transform: translate(-50%,-50%) rotateZ(-135deg);
+}

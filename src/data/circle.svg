@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<svg width="500" height="500" viewPort="0 0 440 440" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="220" cy="220" r="170" stroke-width="50" stroke="#00A5E0" fill="none" transform="matrix(0,-1,1,0,0,440)"></circle>
+</svg>

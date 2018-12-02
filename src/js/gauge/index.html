@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="gauge" class="gauge" style="width:500px;height:500px;">
+	<!--<svg width="200" height="200" viewbox="0 0 200 200">-->
+		<!--<circle cx="100" cy="100" r="95" stroke-width="10" stroke="#5D87FF" fill="none" transform="matrix(0,-1,1,0,0,200)" stroke-dasharray="0 1069"></circle>-->
+	<!--</svg>-->
+	<svg viewBox="0 0 200 200">
+		<path class="el-progress-circle__track" :d="trackPath" stroke="#e5e9f2" :stroke-width="relativeStrokeWidth" fill="none"></path>
+		<path class="el-progress-circle__path" :d="trackPath" stroke-linecap="round" :stroke="stroke" :stroke-width="relativeStrokeWidth" fill="none" :style="circlePathStyle"></path>
+	</svg>
+	<div class="center kdp"></div>
+	<img class="center zz" src="image/zz.png"/>
+	<div class="title">
+		<span>当日统计</span>
+		<div class="number">
+			<span class="lg">66</span>
+			<span class="d">辆</span>
+		</div>
+	</div>
+</div>
+<script src="gauge.js"></script>
+<script>
+	var gauge=new Gauge({
+		elm:'#gauge',
+		title:"单日统计",
+		unit:"辆"
+	});
+	//gauge._setSvgPercent(20)
+	gauge.setOption({
+		title:"单日统计",
+		unit:"辆",
+		number:66,
+		percent:60,
+	})
+</script>
+</body>
+</html>

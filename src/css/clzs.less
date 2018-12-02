@@ -1,0 +1,133 @@
+@import "./global.less";
+.clzs {
+  .left {
+    width: 30%;
+    padding-left: 4px*@p;
+    height:100%;
+  }
+  .chart{
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    height: calc(100% - 65px*@p);
+    margin-top: 10px *@p;
+    box-sizing:border-box;
+    position:relative;
+    .clGaugeBox{
+      position:absolute;
+      width:100%;
+      top:50%;
+      transform:translateY(-50%);
+      .clGauge{
+        width:50%;
+        display:block !important;
+        margin:30px auto;
+        &:first-child{
+          margin-bottom:129px*@p;
+        }
+      }
+    }
+
+  }
+  .right {
+    height:100%;
+    .clsj{
+      height: calc(100% - 65px*@p);
+      box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
+    }
+    table{
+      //.shadowbox;
+    }
+    width:67%;
+    margin-left: 18px*@p;
+  }
+}
+.title {
+  font-size: 26px*@p;
+  color: @fontGray;
+  border-left:solid 4px*@p #4977FC;
+  padding-left: 4px*@p;
+  margin-top: 10px*@p;
+}
+.layui-table {
+  thead{
+    tr {
+      background-color: rgba(248, 243, 253, 1);
+    }
+  }
+}
+.amount{
+  color: #fff;
+  margin-top: 20px*@p;
+  text-align:center;
+  ul{
+    li{
+      width:311px*@p;
+      height:81px*@p;
+      background:linear-gradient(45deg,rgba(116,171,247,1) 0%,rgba(113,136,246,1) 100%);
+      box-shadow: 0px 3px 3px 3px rgba(116,171,247,0.2);
+      border-radius:6px*@p 6px*@p 6px*@p 6px*@p;
+      margin-right:6vw;
+      &:last-child{
+        margin-right:0;
+      }
+      p{
+        text-align: center;
+        font-size: 18px*@p;
+        line-height:36px*@p;
+      }
+      .shuju{
+        text-align: center;
+        font-size: 36px*@p;
+        line-height: 36px*@p;
+      }
+    }
+    .last{
+      background:linear-gradient(45deg,rgba(207,117,229,1) 0%,rgba(137,104,239,1) 100%);
+    }
+  }
+}
+.cwry{
+  .queryBox{
+    .layui-form-checkbox span{
+      font-size:18px*@p !important;
+    }
+    .inlineBlock{
+      margin-right:22px *@p;
+    }
+  }
+  .btn-form-theme-o{
+    font-size:16px;
+    width:auto;
+    height:auto;
+    line-height:100%;
+    border-radius: 5px;
+    padding:3px 8px;
+  }
+}
+.cwryBox{
+  height:40%;
+}
+.rylsBox{
+  height:40%;
+}
+.sjxqTable{
+  margin-top:10px;
+}
+.s-data{
+
+}
+.xstjTable{
+  .btn-form-theme-o{
+    font-size:16px;
+    width:auto;
+    height:auto;
+    line-height:100%;
+    border-radius: 5px;
+    padding:3px 8px;
+  }
+}
+.u-money{
+  display:inline-block;
+}
+
+
+
