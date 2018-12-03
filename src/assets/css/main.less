@@ -115,7 +115,7 @@
       width:260px*@p;
       height:50px*@p;
       padding-left:18px*@p;
-      line-height:100%;
+      line-height:44px*@p;
       color:white;
       border:solid 3px*@p/*1px*/ white;
       border-radius: 9px*@p;
@@ -217,7 +217,7 @@
   border-radius:15px*@p;
   padding:10px*@p;
   z-index:auto !important;
-  left:222px*@p;
+  left:222px;
   bottom:25px*@p !important;
   top:113px*@p !important;
   overflow:hidden;
@@ -231,6 +231,7 @@
 }
 .queryBox{
   font-size:18px*@p;
+  margin-bottom:10px;
   .label{
     color:@fontGray;
     display:inline-block;
@@ -244,16 +245,37 @@
   .selectBox{
     width:134px;
   }
+  .ivu-input{
+    height:34px*@p !important;
+    font-size:18px@p;
+  }
+  .ivu-select-single .ivu-select-selection{
+    height:34px*@p !important;
+    border-radius: 9px*@p;
+    border-color:#979797;
+    width:134px!important;
+  }
+  .ivu-checkbox-wrapper{
+    font-size:18px*@p;
+  }
   .layui-input,.layui-select{
     height:34px*@p;
     line-height:34px*@p;
-    border-radius: 9px;
+    border-radius: 9px*@p;
     border-color:#979797;
     width:134px;
   }
   .dateRange{
     width:266px*@p;
     font-size:16px;
+    .ivu-input{
+      height:34px*@p !important;
+    }
+    .ivu-input-icon{
+      height:34px*@p !important;
+      width:34px*@p !important;
+      line-height:34px*@p !important;
+    }
   }
 }
 .queryBtn{
@@ -303,19 +325,27 @@
   margin-bottom:17px*@p;
 }
 .input{
-  box-sizing: border-box;
-  .inlineBlock;
-  outline:0;
-  border:solid 1px #DDDDDD;
-  border-radius: 9px*@p;
-  padding:3px;
-  line-height:100%;
-  color:@fontGray;
-  &::-webkit-input-placeholder{
-    color:#939393;
+  input[type=text]{
+    box-sizing: border-box;
+    .inlineBlock;
+    outline:0;
+    border:solid 1px #DDDDDD;
+    border-radius: 9px*@p;
+    padding:3px;
+    line-height:100%;
+    color:@fontGray;
+    &::-webkit-input-placeholder{
+      color:#939393;
+    }
   }
 }
 .myform{
+  .yjInput{
+    width:230px;
+    .ivu-input{
+      font-size:18px*@p;
+    }
+  }
   .formGroup{
     margin-bottom:16px*@p;
   }
@@ -446,6 +476,13 @@
   font-size:16px*@p;
   padding-left:149px*@p;
 }
+.sjhj{
+  display:flex;
+  flex-direction: column;
+  .xstjTable{
+    margin-top:20px*@p;
+  }
+}
 .yl{
   li{
     margin-bottom:14px*@p;
@@ -472,9 +509,11 @@
   width:48%;
   margin-right:4%;
   box-sizing:border-box;
+  float:left;
 }
 .r-chart{
   margin-right:0;
+  float:left;
 }
 .l-content,.r-content{
   height:274px*@p;
@@ -498,11 +537,19 @@
     }
   }
 }
+.r-content{
+  padding:8px;
+  box-sizing: border-box;
+}
 .layui-table-grid-down{
   display:none !important;
 }
 .ivu-table th{
   background:#f8f3fd !important;
+}
+.ivu-switch-checked{
+  background:@colorTheme !important;
+  border-color:@colorTheme !important;
 }
 
 

@@ -1,14 +1,23 @@
 @import "./global.less";
 .clzs {
+  padding-bottom:20px*@p !important;
+  .title{
+    margin-bottom:10px*@p;
+  }
   .left {
+    float:left;
     width: 30%;
     padding-left: 4px*@p;
     height:100%;
+    &>div{
+      display:flex;
+      flex-direction:column;
+      height:100%;
+    }
   }
   .chart{
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-    height: calc(100% - 65px*@p);
-    margin-top: 10px *@p;
+    flex-grow:1;
     box-sizing:border-box;
     position:relative;
     .clGaugeBox{
@@ -25,12 +34,19 @@
         }
       }
     }
-
   }
   .right {
     height:100%;
+    float:right;
+    &>div{
+      display:flex;
+      flex-direction:column;
+      height:100%;
+      box-sizing: border-box;
+    }
     .clsj{
-      height: calc(100% - 65px*@p);
+      box-sizing: border-box;
+      flex-grow:1;
       box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
     }
     table{
@@ -104,31 +120,26 @@
   }
 }
 .cwryBox{
-  height:40%;
+  flex-grow: 1;
 }
 .rylsBox{
-  height:40%;
+  flex-grow: 1;
+  margin-top:8px;
 }
 .sjxqTable{
   margin-top:10px;
 }
-.s-data{
-
-}
 .xstjTable{
-  .btn-form-theme-o{
-    font-size:16px;
-    width:auto;
-    height:auto;
-    line-height:100%;
-    border-radius: 5px;
-    padding:3px 8px;
-  }
+  flex-grow: 1;
 }
 .u-money{
   display:flex;
   flex-wrap: nowrap;
   justify-content:space-between;
+}
+.cwry{
+  display:flex;
+  flex-direction: column;
 }
 
 

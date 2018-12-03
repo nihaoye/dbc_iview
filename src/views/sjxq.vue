@@ -46,7 +46,7 @@
                 </li>
             </ul>
         </div>
-        <div class="sjxqTable" style="height:300px;">
+        <div class="sjxqTable">
             <Table :height="tableHeight" :columns="cols" :data="tableData"></Table>
         </div>
 

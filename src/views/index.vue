@@ -1,3 +1,4 @@
+
 <style scoped lang="less">
     .index{
         width: 100%;
@@ -28,12 +29,13 @@
     <div class="index">
         <Row type="flex" justify="center" align="middle">
             <Col span="24">
-                <h1>
-                    <img src="../images/logo.png">
-                </h1>
                 <h2>
-                    <p>Welcome to your iView app!</p>
-                    <Button @click="handleStart">Start iView</Button>
+                    <p>测试连接</p>
+                    <p><router-link to="/clzs">车辆管理</router-link></p>
+                    <p><router-link to="/sjhj">代步车财务</router-link></p>
+                    <p><router-link to="/sjxq">代步车财务3-1</router-link></p>
+                    <p><router-link to="/cwry">人员管理</router-link></p>
+                    <p><router-link to="/jgsz">价格管理(还没弄完先别整)</router-link></p>
                 </h2>
             </Col>
         </Row>

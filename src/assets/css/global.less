@@ -1,0 +1,61 @@
+@p:0.75;
+@colorTheme:#5D87FF;
+@fontGray:#666666;
+.shadowbox{
+  box-shadow: 2px 2px 2px 2px rgba(9,9,9,.2)/*1px*/;
+}
+.inlineBlock{
+  display:inline-block;
+  vertical-align: middle;
+}
+body{
+  font-family: 微软雅黑;
+}
+.font-theme{
+  color:@colorTheme;
+}
+.font-gray{
+  color:@fontGray;
+}
+.btn-theme{
+  background:@colorTheme;
+  color:white;
+}
+.clearfix{
+  &:after{
+    clear:both;
+    content:"";
+    display:block;
+  }
+}
+.itemTitle {
+  font-size: 26px*@p;
+  color: @fontGray;
+  border-left:solid 4px*@p #4977FC;
+  margin-bottom: 8px*@p;
+  padding-left:3px;
+}
+.btn-form-theme{
+  border-radius:8px*@p;
+  background:@colorTheme;
+  width:108px*@p;
+  height:34px*@p;
+  font-size:18px*@p;
+  color:white;
+  text-align: center;
+  line-height:34px*@p;
+}
+.btn-form-theme-o{
+  border-radius:8px*@p;
+  border:solid 1px @colorTheme;
+  width:108px*@p;
+  height:34px*@p;
+  font-size:18px*@p;
+  line-height:34px*@p;
+  color:@colorTheme;
+  text-align: center;
+  background:transparent;
+  &:hover{
+    color:@colorTheme;
+  }
+}

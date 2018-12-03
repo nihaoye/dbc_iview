@@ -2,7 +2,7 @@
         <div class="gauge" :style="{height:clientHeight+'px'}">
             <div class="gauge-center gauge-kdp"></div>
             <svg viewBox="0 0 100 100">
-                <path class="el-progress-circle__path" :d="trackPath" stroke="#5D87FF" :strokeWidth="relativeStrokeWidth" fill="none" :style="circlePathStyle"></path>
+                <path class="el-progress-circle__path" :d="trackPath" stroke="#5D87FF" :stroke-width="relativeStrokeWidth" fill="none" :style="circlePathStyle"></path>
             </svg>
             <img class="gauge-center gauge-zz" src="./zz.png" :style="{transform:'translate(-50%,0) rotate('+zzRotate+'deg)'}"/>
             <div class="gauge-title">
@@ -36,7 +36,7 @@
                 circle:[0,360],
                 strokeWidth:5,
                 width:100,
-                clientHeight:0
+                clientHeight:0,
             }
         },
         computed:{
@@ -71,9 +71,9 @@
         },
         mounted(){
             this.freshHeight();
-            this.$el.onresize=()=>{
-                this.freshHeight();
-            }
+            setTimeout(()=>{
+                this.$el.style.width=this.clientHeight+"px";
+            },20)
         },
         methods:{
             freshHeight(){

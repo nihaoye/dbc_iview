@@ -4,7 +4,7 @@
             <div class="nowdate">2018/8/26(节假日)</div>
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <div class="topBanner layui-nav">
-                <img class="logo" src="src/image/logo.png"/>
+                <img class="logo" src="src/assets/image/logo.png"/>
                 <Dropdown class="sysSelectBox layui-nav-item">
                     <div class="sysSelect">
                         代步车管理
@@ -99,10 +99,10 @@
     }
 </script>
 <style type="text/less">
-    @import 'css/global.less';
-    @import 'js/layui/css/layui.css';
-    @import 'css/iconfont/iconfont.css';
-    @import 'css/main.less';
+    @import 'assets/css/global.less';
+    @import 'assets/js/layui/css/layui.css';
+    @import 'assets/css/iconfont/iconfont.css';
+    @import 'assets/css/main.less';
 </style>
 <style scoped>
 
