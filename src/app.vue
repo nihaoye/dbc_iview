@@ -18,7 +18,7 @@
             </div>
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <Dropdown class="layui-nav-item">
+                    <Dropdown>
                         <div class="userInfo">
                             锦绣中华
                             <span class="layui-nav-more layui-icon layui-icon-down"></span>
