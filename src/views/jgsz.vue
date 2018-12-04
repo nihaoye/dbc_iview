@@ -12,7 +12,7 @@
             <button class="layui-btn layui-btn-sm btn-theme queryBtn">查询</button>
         </div>
         <div class="subTitle"><div class="itemTitle">设置</div></div>
-        <div class="mycard">
+        <div class="mycard formbox">
             <div class="myform">
                 <form>
                     <div class="formGroup">
@@ -35,19 +35,16 @@
                         <div class="fontControl">
                             <ul>
                                 <li class="modeSelect">
-                                    <input id="mode_1" type="radio" name="mode" value="1"/>
-                                    <label for="mode_1">模式一(循环计费)</label>
+                                    <label class="active">模式一(循环计费)</label>
                                     <div class="tip">提示：XX小时/XX元或者XX分钟/XX元。</div>
                                 </li>
                                 <li class="modeSelect">
-                                    <input id="mode_2" type="radio" name="mode" value="2"/>
-                                    <label for="mode_2">模式二(起步价+循环计费)</label>
+                                    <label>模式二(起步价+循环计费)</label>
                                     <div class="tip">提示：XX分钟内不管用多久收费XX元，
                                         <br/>往后每XX分钟收XX元。</div>
                                 </li>
                                 <li class="modeSelect">
-                                    <input id="mode_3" type="radio" name="mode" value="3"/>
-                                    <label for="mode_3">模式三(起步价+梯度计费)</label>
+                                    <label>模式三(起步价+梯度计费)</label>
                                     <div class="tip">提示：例如XX分钟内不管用多久收费XX元，
                                         <br/>往后XX分钟内每XX分钟收XX元，之后免费.</div>
                                 </li>
@@ -74,17 +71,17 @@
                                         <td style="text-align:right;">起步价&nbsp;&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input" value="0分钟"></Input> ~ <Input class="input" value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input"  value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input"  value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -92,17 +89,17 @@
                                         <td style="text-align:right;">循环计费&nbsp;&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input" value="0分钟"></Input> ~ <Input class="input" value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input"  value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input" value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -110,17 +107,17 @@
                                         <td style="text-align:right;">循环计费&nbsp;&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input"  value="0分钟"></Input> ~ <Input class="input" value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input" value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input" value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -145,17 +142,17 @@
                                         <td style="text-align:right;">起步价&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input" value="0分钟"></Input> ~ <Input class="input" value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input"  value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input" value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -163,17 +160,17 @@
                                         <td style="text-align:right;">循环计费&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input" value="0分钟"></Input> ~ <Input class="input"  value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input" value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input"  value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -181,17 +178,17 @@
                                         <td style="text-align:right;">循环计费&nbsp;</td>
                                         <td>
                                             <div class="xd_range">
-                                                <input class="input" data-ing="分钟" value="0分钟"/>~<input class="input" data-ing="分钟" value="60分钟"/>
+                                                <Input class="input" value="0分钟"></Input> ~ <Input class="input" value="60分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="分钟" value="0分钟"/>
+                                                <Input class="input" value="0分钟"></Input>
                                             </div>
                                         </td>
                                         <td>
                                             <div>
-                                                <input class="input" data-ing="元" value="120元"/>
+                                                <Input class="input" value="120元"></Input>
                                             </div>
                                         </td>
                                     </tr>
@@ -209,7 +206,7 @@
             </div>
         </div>
         <div class="subTitle"><div class="itemTitle">预览</div></div>
-        <div class="mycard" style="margin-bottom:0;">
+        <div class="mycard preview" style="margin-bottom:0;">
             <ul class="yl">
                 <li>
                     <label>押 金:</label> 500元

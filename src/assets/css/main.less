@@ -147,8 +147,12 @@
   .ivu-menu{
     color:@fontGray !important;
     border:none !important;
+    font-size:16.5px;
+    .iconfont{
+      font-size:16.5px;
+    }
     .ivu-menu-submenu{
-      margin-bottom:29px*@p;
+      margin-bottom:21.5px;
       border:none !important;
       &.ivu-menu-opened{
         margin-bottom:0;
@@ -330,7 +334,7 @@
     .inlineBlock;
     outline:0;
     border:solid 1px #DDDDDD;
-    border-radius: 9px*@p;
+    border-radius: 16px*@p;
     padding:3px;
     line-height:100%;
     color:@fontGray;
@@ -395,10 +399,7 @@
         background:url("../image/radio.png") no-repeat;
         background-size:100%;
       }
-    }
-    input[type=radio]{
-      display:none;
-      &:checked+label{
+      &.active{
         color:@colorTheme;
         border-color:@colorTheme;
         &:before{
@@ -461,14 +462,17 @@
       padding-left:10px*@p;
     }
   }
-  .input{
+  .ivu-input-wrapper{
+    .ivu-input{
+      color: @fontGray;
+      font-size:20px *@p;
+    }
     width:140px*@p;
     height:36px*@p;
     border-radius: 16px*@p;
-    color: @fontGray;
   }
   .xd_range{
-    width:300px*@p;
+    width:310px*@p;
   }
 }
 .mark_warning{
@@ -550,6 +554,32 @@
 .ivu-switch-checked{
   background:@colorTheme !important;
   border-color:@colorTheme !important;
+}
+.jgsz{
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  .formbox{
+    height:586px *@p;
+    box-sizing: border-box;
+  }
+  .preview{
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+}
+.ivu-menu-vertical .ivu-menu-submenu-title{
+  padding-left:16px !important;
+}
+.ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item{
+  position:relative;
+  &:before{
+    content:'●';
+    display:inline-block;
+    vertical-align: middle;
+    position:absolute;
+    left:29px;
+  }
 }
 
 
