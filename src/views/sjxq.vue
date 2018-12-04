@@ -1,7 +1,7 @@
 <!--代步车财务3-1-->
 <template>
     <div>
-        <div class="jgsz">
+        <div>
             <div class="queryBox">
                 <div class="label font-theme">车 型:</div>
                 <ul class="selectGroup">
